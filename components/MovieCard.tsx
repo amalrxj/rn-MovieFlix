@@ -23,12 +23,12 @@ const MovieCard = ({
           resizeMode="cover"
         />
         <Text
-          className="text-white font-semibold text-sm mt-2"
+          className="text-white font-semibold text-sm mt-1.5"
           numberOfLines={1}
         >
           {title}
         </Text>
-        <View className="flex-row items-center justify-between mt-1.5">
+        <View className="flex-row items-center justify-between mt-1">
           <View className="flex-row items-center gap-x-1">
             <Image source={icons.star} className="size-3" />
             <Text className="text-text font-bold text-xs uppercase">

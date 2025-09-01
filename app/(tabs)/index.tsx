@@ -49,7 +49,7 @@ export default function App() {
             />
             <>
               <Text className="text-white font-bold text-base mt-5 mb-3">
-                Latest Movies
+                Popular Movies
               </Text>
               <FlatList
                 data={movies}
@@ -57,9 +57,8 @@ export default function App() {
                 numColumns={3}
                 columnWrapperStyle={{
                   justifyContent: "flex-start",
-                  gap: 20,
-                  paddingRight: 5,
-                  marginBottom: 10,
+                  gap: 16,
+                  marginBottom: 16,
                 }}
                 className="mt-2 pb-32"
                 scrollEnabled={false}
