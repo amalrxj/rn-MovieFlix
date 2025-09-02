@@ -23,16 +23,16 @@ const MovieCard = ({
           resizeMode="cover"
         />
         <Text
-          className="text-white font-semibold text-sm mt-1.5"
+          className="text-white font-semibold text-sm mt-2"
           numberOfLines={1}
         >
           {title}
         </Text>
-        <View className="flex-row items-center justify-between mt-1">
+        <View className="flex-row items-center justify-between mt-0.5">
           <View className="flex-row items-center gap-x-1">
             <Image source={icons.star} className="size-3" />
             <Text className="text-text font-bold text-xs uppercase">
-              {Math.round(vote_average / 2)}
+              {Math.round(vote_average * 10) / 10}
             </Text>
           </View>
           <View className="flex-row items-center justify-end">

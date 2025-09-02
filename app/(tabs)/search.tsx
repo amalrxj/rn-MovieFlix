@@ -25,15 +25,15 @@ const Search = () => {
       } else {
         reset();
       }
-    }, 500);
+    }, 800);
     return () => clearTimeout(timeoutId);
   }, [searchQuery]);
 
   useEffect(() => {
-  if (searchQuery.trim() && movies?.length > 0) {
-    updateSearchCount(searchQuery.toLowerCase(), movies[0]);
-  }
-}, [movies]);
+    if (searchQuery.trim() && movies?.length > 0) {
+      updateSearchCount(searchQuery.toLowerCase(), movies[0]);
+    }
+  }, [movies]);
 
   return (
     <View className="flex-1 bg-primary">
