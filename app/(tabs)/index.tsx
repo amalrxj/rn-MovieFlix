@@ -32,7 +32,11 @@ export default function App() {
 
   return (
     <View className="flex-1 bg-primary">
-      <Image source={images.bg} className="absolute w-full z-0" />
+      <Image
+        source={images.bg}
+        className="absolute w-full z-0"
+        resizeMode="cover"
+      />
       <ScrollView
         className="flex-1 px-5"
         showsHorizontalScrollIndicator={false}
@@ -66,7 +70,7 @@ export default function App() {
                   horizontal
                   showsHorizontalScrollIndicator={false}
                   ItemSeparatorComponent={() => <View className="w-3" />}
-                  contentContainerStyle={{ paddingRight: 16 }}
+                  contentContainerStyle={{ gap: 26 }}
                   renderItem={({ item, index }) => (
                     <TrendingCard movie={item} index={index} />
                   )}
@@ -83,8 +87,9 @@ export default function App() {
                 numColumns={3}
                 columnWrapperStyle={{
                   justifyContent: "flex-start",
-                  gap: 15,
-                  marginBottom: 16,
+                  gap: 20,
+                  paddingRight: 5,
+                  marginBottom: 10,
                 }}
                 className="mt-3 pb-32"
                 scrollEnabled={false}
